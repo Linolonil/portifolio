@@ -4,17 +4,24 @@ import Menu from "./Menu";
 
 const Portifolio = () => {
   const [items, setItems] = useState(Menu);
+  const filterItem = (categoryItem) =>{
+    const updatedItems = Menu.filter((curElement)=>{
+      return curElement.category ===categoryItem
+    })
+
+    setItems(updatedItems)
+  }
   return (
-    <section className="work container section" id="work">
+    <section className="work container section portifolio" id="portifolio">
       <h2 className="section_title">Recent Works</h2>
       <div className="work_filters">
-        <span className="work_item">Everything</span>
-        <span className="work_item">Creative</span>
-        <span className="work_item">Art</span>
-        <span className="work_item">Design</span>
-        <span className="work_item">Branding</span>
+        <span className="work_item" onClick={() => filterItem('Everything')}>Everything</span>
+        <span className="work_item" onClick={() => filterItem('Creative')}>Creative</span>
+        <span className="work_item" onClick={() => filterItem('Art')}>Art</span>
+        <span className="work_item" onClick={() => filterItem('Design')}>Design</span>
+        <span className="work_item" onClick={() => filterItem('Branding')}>Branding</span>
       </div>
-      <div className="work_container gri">
+      <div className="work_container grid">
         {items.map((elem) => {
           const { id, image, title, category } = elem;
           return (
