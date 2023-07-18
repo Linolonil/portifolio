@@ -52,26 +52,24 @@
 .mouse {
   border: 2px solid #454360;
   display: block;
-  height: 1.6rem;
+  height: 2rem;
   width: 1.25rem;
   margin: auto;
   border-radius: 1rem;
   margin-top: 0.75rem;
   position: relative;
+  transition: 6s all ease-in-out;
 }
 
 @keyframes ani-mouse {
   0% {
-    top: 29%;
-  }
-  15% {
-    top: 50%;
+    top: 0;
   }
   50% {
-    top: 50%;
+    top: 40;
   }
   100% {
-    top: 29%;
+    top: 80%;
   }
 }
 
@@ -84,7 +82,8 @@
   top: 0.5rem;
   left: 0.5rem;
   transform: translateX(-50%);
-  animation: ani-mouse 2s linear infinite;
+  transition: 6s all ease-in-out;
+  animation: ani-mouse 3s ease-out infinite;
 }
 
 .shapes {

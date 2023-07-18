@@ -34,3 +34,23 @@
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
 }
+
+/* Estilo para o item de menu ativo */
+.nav_item.active a {
+  color: hsl(
+    353,
+    100%,
+    65%
+  ); /* Cor do texto do item de menu ativo (pode ajustar a cor) */
+}
+
+/* Estilo da linha abaixo do link ativo */
+.nav_item.active a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff; /* Cor da linha (pode ajustar a cor) */
+}

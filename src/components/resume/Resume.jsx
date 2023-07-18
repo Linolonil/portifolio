@@ -2,6 +2,7 @@ import React from "react";
 import "./resume.css";
 import Data from "./Data";
 import Card from "./Card";
+import Testimonials from "../testimonials/Testimonials";
 
 const Resume = () => {
   return (
@@ -45,6 +46,7 @@ const Resume = () => {
           })}
         </div>
       </div>
+      <Testimonials />
     </section>
   );
 };

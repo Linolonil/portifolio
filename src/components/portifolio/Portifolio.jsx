@@ -4,22 +4,38 @@ import Menu from "./Menu";
 
 const Portifolio = () => {
   const [items, setItems] = useState(Menu);
-  const filterItem = (categoryItem) =>{
-    const updatedItems = Menu.filter((curElement)=>{
-      return curElement.category ===categoryItem
-    })
 
-    setItems(updatedItems)
-  }
+  const filterItem = (categoryItem) => {
+    if (categoryItem === "Everything") {
+      // Se a opção "Everything" for selecionada, restaura os itens originais do portfólio
+      setItems(Menu);
+    } else {
+      // Filtra os itens com base na categoria selecionada
+      const updatedItems = Menu.filter((curElement) => {
+        return curElement.category === categoryItem;
+      });
+      setItems(updatedItems);
+    }
+  };
   return (
     <section className="work container section portifolio" id="portifolio">
       <h2 className="section_title">Recent Works</h2>
       <div className="work_filters">
-        <span className="work_item" onClick={() => filterItem('Everything')}>Everything</span>
-        <span className="work_item" onClick={() => filterItem('Creative')}>Creative</span>
-        <span className="work_item" onClick={() => filterItem('Art')}>Art</span>
-        <span className="work_item" onClick={() => filterItem('Design')}>Design</span>
-        <span className="work_item" onClick={() => filterItem('Branding')}>Branding</span>
+        <span className="work_item" onClick={() => filterItem("Everything")}>
+          Everything
+        </span>
+        <span className="work_item" onClick={() => filterItem("Creative")}>
+          Creative
+        </span>
+        <span className="work_item" onClick={() => filterItem("Art")}>
+          Art
+        </span>
+        <span className="work_item" onClick={() => filterItem("Design")}>
+          Design
+        </span>
+        <span className="work_item" onClick={() => filterItem("Branding")}>
+          Branding
+        </span>
       </div>
       <div className="work_container grid">
         {items.map((elem) => {

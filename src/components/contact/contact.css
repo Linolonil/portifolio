@@ -1,0 +1,111 @@
+.contact {
+  margin: 10rem;
+}
+
+.contact.section {
+  padding-bottom: 1.25rem;
+}
+
+.contact_container {
+  grid-template-columns: 4fr 8fr;
+  column-gap: 1.875rem;
+}
+
+.contact_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.contact_form-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+
+.contact_form-div {
+  position: relative;
+  margin-bottom: 1.875rem;
+  height: 3.75rem;
+}
+
+.contact_form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--shadow);
+  background-color: var(--container-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  padding: 0.635rem 1.875rem;
+  z-index: 1;
+}
+
+.contact_form-area {
+  height: 10.25rem;
+}
+
+.contact_form-area text {
+  resize: none;
+}
+/* scroll top */
+
+.home_scroll-name {
+  font-size: var(--small-font-size);
+}
+
+@keyframes ani-mouse-up {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 60;
+  }
+  100% {
+    top: 80%;
+  }
+}
+.whell-up {
+  background-color: var(--title-color);
+  border-radius: 100%;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  transform: translateX(-50%);
+  animation: ani-mouse-up 1.5s ease-out infinite alternate-reverse;
+  transition: 6s all ease-in-out;
+}
+.mouse-up {
+  border: 2px solid #454360;
+  display: block;
+  height: 2rem;
+  width: 1.25rem;
+  border-radius: 1rem;
+  position: fixed;
+  right: 10px;
+  bottom: 1rem;
+  opacity: 1;
+  transition: 6s all ease-in-out;
+}
+
+.scroll_up {
+  /* Estilo padrão do botão (escondido por padrão) */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 999;
+}
+
+.scroll_up.show {
+  /* Estilo do botão quando deve ser mostrado */
+  opacity: 1;
+  visibility: visible;
+}
