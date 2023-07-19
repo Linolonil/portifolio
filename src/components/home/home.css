@@ -7,13 +7,43 @@
 }
 
 .intro {
-  max-width: 540px;
+  max-width: 640px;
   text-align: center;
   z-index: 1;
 }
 
 .home_img {
-  margin-bottom: 1.5rem;
+  position: relative;
+  background-color: rgba(120, 120, 120, 1.7);
+  width: 15rem;
+  border-radius: 50%;
+  margin-bottom: 4.5rem;
+  box-shadow: 0 0 10px rgba(238, 99, 82, 1);
+  outline: 5px solid rgba(238, 99, 82, 0.5);
+  outline-offset: 1rem;
+  transition: 500ms ease-in-out;
+  animation: sliderShapes linear infinite;
+  -webkit-animation: pulseBorder 5s linear infinite;
+  /* animation: pulseBorder 5s infinite cubic-bezier(0.4, 0, 0.2, 1); Adiciona a animação ao passar o mouse */
+}
+
+/* Animação da borda pulsante */
+@keyframes pulseBorder {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+.home_img:hover {
+  outline-offset: -0.7rem;
+  box-shadow: 0 0 40px rgba(238, 99, 82, 0.9);
 }
 
 .home_name {
@@ -31,7 +61,7 @@
 }
 .home_social-link {
   color: var(--title-color);
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   transition: 0.3s;
 }
 .home_social-link:hover {

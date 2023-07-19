@@ -1,14 +1,14 @@
 import React from "react";
 import "./testimonials.css";
-import Image1 from '../../assets/avatar-1.svg'
-import Image3 from '../../assets/avatar-3.svg'
+import Image1 from "../../assets/me.png";
+import Image3 from "../../assets/avatar-3.svg";
 
 // core version + navigation, pagination modules:
-import {Swiper, SwiperSlide} from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 // import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 const data = [
   {
@@ -30,14 +30,21 @@ const data = [
 ];
 
 const Testimonials = () => {
-  return(
+  return (
     <section className="testimonials container section">
       <h2 className="section_title">Clients & Review</h2>
 
-      <Swiper 
-      modules={[Pagination]} loop={true} grabCursor={true} pagination={{clickable:true}} spaceBetween={30} slidesPerView={1} className="testimonials_container grid">
-        {data.map(({id, image, title, subtitle, comment}) => {
-          return(
+      <Swiper
+        modules={[Pagination]}
+        loop={true}
+        grabCursor={true}
+        pagination={{ clickable: true }}
+        spaceBetween={30}
+        slidesPerView={1}
+        className="testimonials_container grid"
+      >
+        {data.map(({ id, image, title, subtitle, comment }) => {
+          return (
             <SwiperSlide className="testimonial_item" key={id}>
               <div className="thumb">
                 <img src={image} alt="" />
@@ -46,11 +53,11 @@ const Testimonials = () => {
               <span className="subtitle">{subtitle}</span>
               <div className="comment">{comment}</div>
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </section>
-  )
+  );
 };
 
 export default Testimonials;
