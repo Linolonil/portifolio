@@ -1,5 +1,51 @@
 import React, { useState, useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+
 import "./contact.css";
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("mgejvkno");
+  if (state.succeeded) {
+    return <p>Entrarei em contato em breve, obrigado!</p>;
+  }
+  return (
+    // <form className="contact_form" onSubmit={handleSubmit}>
+    //   <label htmlFor="email">Email Address</label>
+    //   <input id="email" type="email" name="email" />
+    //   <ValidationError prefix="Email" field="email" errors={state.errors} />
+    //   <textarea id="message" name="message" />
+    //   <ValidationError prefix="Message" field="message" errors={state.errors} />
+    //   <button className="btn" type="submit" disabled={state.submitting}>
+    //     Submit
+    //   </button>
+    // </form>
+    <form className="contact_form" onSubmit={handleSubmit}>
+      <div className="contact_form-group">
+        <div className="contact_form-div">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            className="contact_form-input"
+            placeholder="Insira seu e-mail"
+          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </div>
+      </div>
+      <div className="contact_form-div contact_form-area">
+        <textarea
+          id="message"
+          name="message"
+          cols="30"
+          rows="10"
+          className="contact_form-input"
+          placeholder="Sua mensagem, aqui."
+        ></textarea>
+      </div>
+      <button className="btn">Send Message</button>
+    </form>
+  );
+}
 
 const Contact = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -24,60 +70,25 @@ const Contact = () => {
 
   return (
     <section className="contact container section" id="contact">
-      <h2 className="section_title">Get in Touch</h2>
+      <h2 className="section_title">Entrar em contato</h2>
       <div className="contact_container grid">
         <div className="contact_info">
-          <h3 className="contact_title">Let's talk about everything</h3>
-          <p className="contact_details">Don't like forms? Send me an email.</p>
+          <p className="contact_details">Me envie um e-mail por aqui 😊.</p>
         </div>
-        <form action="" className="contact_form">
-          <div className="contact_form-group">
-            <div className="contact_form-div">
-              <input
-                type="text"
-                className="contact_form-input"
-                placeholder="Insert your name"
-              />
-            </div>
-            <div className="contact_form-div">
-              <input
-                type="email"
-                className="contact_form-input"
-                placeholder="Insert your email"
-              />
-            </div>
-          </div>
-          <div className="contact_form-div">
-            <input
-              type="text"
-              className="contact_form-input"
-              placeholder="Insert your subject"
-            />
-          </div>
-          <div className="contact_form-div contact_form-area">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              className="contact_form-input"
-              placeholder="Write your message"
-            ></textarea>
-          </div>
-          <button className="btn">Send Message</button>
-          {/* arrow up */}
+        <ContactForm />
 
-          <div className={`scroll_up ${showScrollButton ? "show" : ""}`}>
-            <a href="#home" onClick={scrollToTop} className="mouse_wrapper">
-              <span className="home_scroll-name">
-                <span className="mouse-up">
-                  <span className="whell-up"></span>
-                </span>
+        {/* arrow up */}
+
+        <div className={`scroll_up ${showScrollButton ? "show" : ""}`}>
+          <a href="#home" onClick={scrollToTop} className="mouse_wrapper">
+            <span className="home_scroll-name">
+              <span className="mouse-up">
+                <span className="whell-up"></span>
               </span>
-            </a>
-          </div>
-          {/*  */}
-        </form>
+            </span>
+          </a>
+        </div>
+        {/*  */}
       </div>
     </section>
   );

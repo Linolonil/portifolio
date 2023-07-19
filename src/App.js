@@ -6,7 +6,6 @@ import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Resume from "./components/resume/Resume";
 import Portifolio from "./components/portifolio/Portifolio";
-import Blog from "./components/blog/Blog";
 import Contact from "./components/contact/Contact";
 
 function App() {
@@ -76,7 +75,6 @@ function App() {
         <Services id="services" />
         <Resume id="resume" />
         <Portifolio id="portifolio" />
-        <Blog id="blog" />
         <Contact id="contact" />
       </main>
     </div>

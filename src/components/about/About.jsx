@@ -1,22 +1,21 @@
 import React from "react";
 import "./about.css";
-import Image from "../../assets/avatar-2.svg";
+import me from "../../assets/me.png";
 import AboutBox from "./AboutBox";
 
 const About = () => {
   return (
     <section className="about container section" id="about">
-      <h2 className="section_title">About me</h2>
+      <h2 className="section_title">Sobre mim</h2>
 
       <div className="about_container grid">
-        <img src={Image} alt="sobre" className="about_img" />
+        <img src={me} alt="sobre" className="about_img" />
 
         <div className="about_data grid">
           <div className="about_info">
             <p className="about_description">
-              I am Bolby Doe, web developer from London, United Kingdom. I have
-              rich experience in web site design and building and customization,
-              also I am good at WordPress.
+            Olá, sou Lino Jorge, um desenvolvedor web nascido e criado em Manaus, Amazonas. Assim como a rica diversidade da minha cidade natal, minha paixão pelo desenvolvimento web também é multifacetada e repleta de possibilidades.
+            Estou animado para continuar minha jornada no desenvolvimento web, explorando novas tecnologias e enfrentando desafios empolgantes. Com cada linha de código, busco contribuir para o crescimento e o sucesso de projetos digitais, elevando-os a um patamar superior.
             </p>
             <a
               href="https://www.youtube.com/watch?v=o3IP5HeFRO0&list=PLrKudo5h_b8DNVrsMdvR0G-ckA9o2m_13&index=1"

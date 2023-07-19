@@ -5,7 +5,11 @@ import Logo from "../../assets/logo.svg";
 const Sidebar = ({ activeSection }) => {
   return (
     <aside className="aside">
-      <a href="#home" className="nav_logo">
+      <a
+        href="https://github.com/Linolonil/portifolio"
+        target="blank"
+        className="nav_logo"
+      >
         <img src={Logo} alt="logo" />
       </a>
       <nav className="nav">
@@ -54,13 +58,7 @@ const Sidebar = ({ activeSection }) => {
                 <i className="icon-layers"></i>
               </a>
             </li>
-            <li
-              className={`nav_item ${activeSection === "blog" ? "active" : ""}`}
-            >
-              <a href="#blog" className="nav_link">
-                <i className="icon-note"></i>
-              </a>
-            </li>
+
             <li
               className={`nav_item ${
                 activeSection === "contact" ? "active" : ""

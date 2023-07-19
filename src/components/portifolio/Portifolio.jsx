@@ -19,22 +19,22 @@ const Portifolio = () => {
   };
   return (
     <section className="work container section portifolio" id="portifolio">
-      <h2 className="section_title">Recent Works</h2>
+      <h2 className="section_title">Meus Projetos</h2>
       <div className="work_filters">
         <span className="work_item" onClick={() => filterItem("Everything")}>
-          Everything
+          Mostrar Tudo
         </span>
-        <span className="work_item" onClick={() => filterItem("Creative")}>
-          Creative
+        <span className="work_item" onClick={() => filterItem("Front-end")}>
+          Front-end
         </span>
-        <span className="work_item" onClick={() => filterItem("Art")}>
-          Art
+        <span className="work_item" onClick={() => filterItem("Backend")}>
+          Backend
         </span>
-        <span className="work_item" onClick={() => filterItem("Design")}>
-          Design
+        <span className="work_item" onClick={() => filterItem("Full-stack")}>
+          Full-Stack
         </span>
-        <span className="work_item" onClick={() => filterItem("Branding")}>
-          Branding
+        <span className="work_item" onClick={() => filterItem("Landpages")}>
+          Landpages
         </span>
       </div>
       <div className="work_container grid">
