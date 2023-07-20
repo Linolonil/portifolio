@@ -15,9 +15,9 @@
 .home_img {
   position: relative;
   background-color: rgba(120, 120, 120, 1.7);
-  width: 15rem;
+  width: 16rem;
   border-radius: 50%;
-  margin-bottom: 4.5rem;
+  margin-bottom: 1.5rem;
   box-shadow: 0 0 10px rgba(238, 99, 82, 1);
   outline: 5px solid rgba(238, 99, 82, 0.5);
   outline-offset: 1rem;
@@ -25,6 +25,9 @@
   animation: sliderShapes linear infinite;
   -webkit-animation: pulseBorder 5s linear infinite;
   /* animation: pulseBorder 5s infinite cubic-bezier(0.4, 0, 0.2, 1); Adiciona a animação ao passar o mouse */
+}
+.home_education {
+  font-size: var(--h3-font-size);
 }
 
 /* Animação da borda pulsante */

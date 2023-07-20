@@ -62,17 +62,34 @@
   display: block;
 }
 
-.development {
-  width: 90%;
+.html {
+  width: 70%;
   background-color: rgb(255, 209, 92);
 }
-.ui_design {
+.css {
   width: 80%;
   background-color: rgb(255, 76, 96);
 }
-.photography {
+.javascript {
   width: 60%;
   background-color: rgb(108, 108, 299);
+}
+
+.typescript {
+  width: 30%;
+  background-color: rgb(255, 209, 92);
+}
+.react {
+  width: 40%;
+  background-color: rgb(255, 76, 96);
+}
+.node {
+  width: 30%;
+  background-color: rgb(108, 108, 299);
+}
+.sql {
+  width: 40%;
+  background-color: rgb(255, 209, 92);
 }
 .about_boxes {
   grid-template-columns: repeat(4, 1fr);

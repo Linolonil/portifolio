@@ -2,7 +2,7 @@ import React from "react";
 import "./sidebar.css";
 import Logo from "../../assets/logo.svg";
 
-const Sidebar = ({ activeSection }) => {
+const Sidebar = () => {
   return (
     <aside className="aside">
       <a
@@ -15,55 +15,33 @@ const Sidebar = ({ activeSection }) => {
       <nav className="nav">
         <div className="nav_menu">
           <ul className="nav_list">
-            <li
-              className={`nav_item ${activeSection === "home" ? "active" : ""}`}
-            >
+            <li className="nav_item">
               <a href="#home" className="nav_link">
                 <i className="icon-home"></i>
               </a>
             </li>
-            <li
-              className={`nav_item ${
-                activeSection === "about" ? "active" : ""
-              }`}
-            >
+            <li className="nav_item">
               <a href="#about" className="nav_link">
                 <i className="icon-user-following"></i>
               </a>
             </li>
-            <li
-              className={`nav_item ${
-                activeSection === "services" ? "active" : ""
-              }`}
-            >
+            <li className="nav_item">
               <a href="#services" className="nav_link">
                 <i className="icon-briefcase"></i>
               </a>
             </li>
-            <li
-              className={`nav_item ${
-                activeSection === "resume" ? "active" : ""
-              }`}
-            >
+            <li className="nav_item">
               <a href="#resume" className="nav_link">
                 <i className="icon-graduation"></i>
               </a>
             </li>
-            <li
-              className={`nav_item ${
-                activeSection === "portifolio" ? "active" : ""
-              }`}
-            >
+            <li className="nav_item">
               <a href="#portifolio" className="nav_link">
                 <i className="icon-layers"></i>
               </a>
             </li>
 
-            <li
-              className={`nav_item ${
-                activeSection === "contact" ? "active" : ""
-              }`}
-            >
+            <li className="nav_item">
               <a href="#contact" className="nav_link">
                 <i className="icon-bubble"></i>
               </a>
