@@ -17,6 +17,7 @@ function ContactForm() {
               name="email"
               className="contact_form-input"
               placeholder="Insira seu e-mail"
+              required
             />
             <ValidationError
               prefix="Email"
@@ -33,6 +34,7 @@ function ContactForm() {
             rows="10"
             className="contact_form-input contact_title"
             placeholder="Sua mensagem, aqui."
+            required
           ></textarea>
         </div>
         <button className="btn">Send Message</button>

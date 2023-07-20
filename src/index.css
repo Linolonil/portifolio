@@ -10,27 +10,25 @@
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 62%, 98%);
   --container-color: hsl(258, 92%, 95%);
+  --aside-border: hsl(258, 92%, 95%);
+  --download-color: hsl(258, 92%, 95%);
 
   /* ============= Font and typography ============ */
 
   /* .5rem = 8px | 1rem = 16px ... */
   --body-font: "rubik", sans-serif;
-  --h1-font-size: 2.25rem;
+  --h1-font-size: 3.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
-
   /* ============= Font weight ============ */
   --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
-
   /* ============= Box Shadow ============ */
-
-  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
-
+  --shadow: 0px 5px 20px 0px rgb(80 80 150 / 10%);
   /* ============= Border Radius ============ */
   --border-radius: 20px;
 }
@@ -41,7 +39,10 @@
   --text-color: hsl(0, 5%, 80%);
   --body-color: hsl(258, 8%, 12%);
   --container-color: hsl(262, 30%, 50%);
+  --aside-border: hsl(260, 13%, 23%);
+  --download-color: hsl(260, 13%, 23%);
 }
+
 /* Responseive Typography */
 @media screen and (max-width: 1024px) {
   :root {
@@ -51,8 +52,10 @@
     --normal-font-size: 0.9rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
+    --big-font-size: 1rem;
   }
 } /* ================ Base =============== */
+
 * {
   margin: 0;
   padding: 0;
@@ -105,10 +108,13 @@ img {
 
 /* ============= Resuable CSS Classes ============ */
 .container {
-  max-width: 1080px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1250px;
+  padding: 0 15px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .grid {
@@ -124,7 +130,8 @@ img {
   margin-left: 0.875rem;
   font-weight: var(--font-bold);
   position: relative;
-  margin-bottom: 3.75rem;
+  margin-top: -5rem;
+  margin-bottom: 5.75rem;
 }
 
 .section_title::before {
@@ -143,14 +150,27 @@ img {
   line-height: 1;
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgb(0, 0, 0 / 0%);
-  border: 1px solid transparent;
+  border: 1px solid var(--first-color);
   color: #fff;
   display: inline-block;
   background-color: var(--first-color);
   font-weight: var(--font-bold);
 }
+.btn_nocolor {
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 1px rgb(0, 0, 0 / 0%);
+  border: 1px solid var(--first-color);
+  color: var(--first-color);
+  display: inline-block;
+  font-weight: var(--font-bold);
+}
 
 .btn:hover {
+  animation: button-push 1s ease-in-out infinite;
+}
+.btn_nocolor:hover {
   animation: button-push 1s ease-in-out infinite;
 }
 

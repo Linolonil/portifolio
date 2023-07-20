@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "../contactForm/ContactForm";
+import HeaderSocial from "../contact/HeaderSocial";
+
 import "./contact.css";
 
 const Contact = () => {
@@ -27,6 +29,7 @@ const Contact = () => {
   return (
     <section className="contact container section" id="contact">
       <h2 className="section_title">Entrar em contato</h2>
+      <HeaderSocial/>
       <div className="contact_container grid">
         <div className="contact_info">
           <p className="contact_details">Me envie um e-mail por aqui 😊.</p>

@@ -109,3 +109,12 @@
   opacity: 1;
   visibility: visible;
 }
+
+.home_social-link {
+  color: var(--title-color);
+  font-size: 3.3rem;
+  transition: 0.3s;
+}
+.home_social-link:hover {
+  color: hsl(43, 100%, 68%);
+}

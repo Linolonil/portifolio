@@ -1,23 +1,24 @@
 import React from "react";
 import "./home.css";
 import Me from "../../assets/me.png";
-import HeaderSocial from "./HeaderSocial";
-import Shapes from "./Shapes";
+import DownloadButton from "../about/DownloadButton";
 
 const Home = () => {
   return (
     <section className="home container" id="home">
       <div className="intro">
-        <img src={Me} alt="Foto do Lino" className="home_img" />
-        <h1 className="home_name">Lino Jorge Bittencourt da Silva</h1>
-        <span className="home_education">Full-stack developer</span>
-        <HeaderSocial />
-
-        <a href="#contact" className="btn">
-          Fale comigo
-        </a>
+        <h1 className="home_name">
+          Lino Jorge <br></br> Bittencourt da Silva
+        </h1>
+        <span className="home_education">Desenvolvedor Frontend</span>
+        <section className="home_buttons">
+          <DownloadButton />
+          <a href="#contact" className="btn_nocolor">
+            Entrar em contato
+          </a>
+        </section>
       </div>
-      <Shapes />
+      <img src={Me} alt="Foto do Lino" className="home_img" />
     </section>
   );
 };

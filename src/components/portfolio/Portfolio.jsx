@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./portifolio.css";
+import "./portfolio.css";
 import Menu from "./Menu";
 
 const Portifolio = () => {
@@ -18,7 +18,7 @@ const Portifolio = () => {
     }
   };
   return (
-    <section className="work container section portifolio" id="portifolio">
+    <section className="work container section portifolio" id="portfolio">
       <h2 className="section_title">Meus Projetos</h2>
       <div className="work_filters">
         <span className="work_item" onClick={() => filterItem("Everything")}>
