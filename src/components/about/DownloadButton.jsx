@@ -1,5 +1,5 @@
 import React from "react";
-import Pdf from "../../assets/Lino_curriculo.pdf";
+import Pdf from "../../assets/pdf/Lino_curriculo.pdf";
 
 const DownloadButton = () => {
   return (

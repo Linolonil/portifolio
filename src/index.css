@@ -5,14 +5,13 @@
 :root {
   /* ============= Colors ============ */
   /* Color mode HSL(gue, saturationm lightness) */
-  --first-color: hsl(353, 100%, 65%);
+  --first-color: hsl(352.96, 100%, 64.9%);
   --title-color: hsl(244, 24%, 36%);
   --text-color: hsl(244, 16%, 43%);
-  --body-color: hsl(258, 62%, 98%);
+  --body-color: hsl(258, 62%, 97%);
   --container-color: hsl(258, 92%, 95%);
   --aside-border: hsl(258, 92%, 95%);
   --download-color: hsl(258, 92%, 95%);
-
   /* ============= Font and typography ============ */
 
   /* .5rem = 8px | 1rem = 16px ... */
@@ -20,7 +19,7 @@
   --h1-font-size: 3.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
+  --normal-font-size: 1.1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
   /* ============= Font weight ============ */
@@ -36,11 +35,15 @@
   /* dark mode */
   --first-color: hsl(353, 100%, 65%);
   --title-color: hsl(0, 5%, 100%);
-  --text-color: hsl(0, 5%, 80%);
+  --text-color: hsl(0, 5%, 100%);
   --body-color: hsl(258, 8%, 12%);
-  --container-color: hsl(262, 30%, 50%);
+  --container-color: hsl(258, 8%, 15%);
   --aside-border: hsl(353, 100%, 65%);
+    /* ============= PDF Download color============ */
   --download-color: hsl(260, 13%, 23%);
+    /* ============= Box Shadow ============ */
+  --shadow: box-shadow: inset 0 0 10px 10px #fff;;
+
 }
 
 /* Responseive Typography */
@@ -73,6 +76,9 @@ textarea,
 p {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+}
+p{
+  border-radius: var(--border-radius);
 }
 
 body {
@@ -130,7 +136,6 @@ img {
 .section_title {
   font-style: var(--h1-font-size);
   font-weight: var(--font-bold);
-
 }
 
 .section_title::before {
