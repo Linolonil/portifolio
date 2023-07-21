@@ -28,7 +28,7 @@
   --font-semibold: 600;
   --font-bold: 700;
   /* ============= Box Shadow ============ */
-  --shadow: 0px 5px 20px 0px rgb(80 80 150 / 10%);
+  --shadow: 0px 5px 20px 0px rgba(0, 0, 141, 0.1);
   /* ============= Border Radius ============ */
   --border-radius: 20px;
 }
@@ -39,7 +39,7 @@
   --text-color: hsl(0, 5%, 80%);
   --body-color: hsl(258, 8%, 12%);
   --container-color: hsl(262, 30%, 50%);
-  --aside-border: hsl(260, 13%, 23%);
+  --aside-border: hsl(353, 100%, 65%);
   --download-color: hsl(260, 13%, 23%);
 }
 
@@ -69,7 +69,8 @@ html {
 body,
 button,
 input,
-textarea {
+textarea,
+p {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -108,7 +109,7 @@ img {
 
 /* ============= Resuable CSS Classes ============ */
 .container {
-  max-width: 1250px;
+  max-width: 1080px;
   padding: 0 15px;
   margin: 0 auto;
   display: flex;
@@ -122,16 +123,14 @@ img {
 }
 /* sections */
 .section {
-  padding-top: 7rem;
   padding-bottom: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 .section_title {
   font-style: var(--h1-font-size);
-  margin-left: 0.875rem;
   font-weight: var(--font-bold);
-  position: relative;
-  margin-top: -5rem;
-  margin-bottom: 5.75rem;
+
 }
 
 .section_title::before {

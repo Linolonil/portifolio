@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className="home_name">
           Lino Jorge <br></br> Bittencourt da Silva
         </h1>
-        <span className="home_education">Desenvolvedor Frontend</span>
+        <span className="home_education">Desenvolvedor Web</span>
         <section className="home_buttons">
           <DownloadButton />
           <a href="#contact" className="btn_nocolor">
