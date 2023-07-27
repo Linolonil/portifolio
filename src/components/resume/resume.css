@@ -9,6 +9,9 @@
   border-radius: var(--border-radius);
   position: relative;
 }
+.timeline_text {
+  color: var(--text-color);
+}
 
 .timeline_item {
   position: relative;
@@ -42,7 +45,7 @@
 }
 
 .timeline_date {
-  color: var(--container-color);
+  color: var(--text-color);
   font-size: var(--small-font-size);
 }
 

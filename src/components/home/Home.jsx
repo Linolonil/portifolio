@@ -5,7 +5,7 @@ import DownloadButton from "../about/DownloadButton";
 
 const Home = () => {
   return (
-    <section className="home container" id="home">
+    <section className="home" id="home">
       <div className="intro">
         <h1 className="home_name">
           Lino Jorge <br></br> Bittencourt da Silva

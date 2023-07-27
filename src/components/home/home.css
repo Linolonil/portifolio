@@ -1,9 +1,9 @@
 .home {
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--flex-direction);
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: var(--flex-content);
 }
 
 .intro {
@@ -18,9 +18,9 @@
 }
 
 .home_img {
-  position: relative;
+  border: 1px solid #fff;
   background-color: rgba(120, 120, 120, 1.7);
-  width: 20rem;
+  width: var(--img-size);
   border-radius: 50%;
   margin-bottom: 1.5rem;
   box-shadow: 0 0 10px rgba(238, 99, 82, 1);

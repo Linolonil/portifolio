@@ -30,7 +30,7 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: 4rem;
-  color: var(---text-color);
+  color: var(--text-color);
   font-size: var(--normal-font-size);
   transition: 0.3s all ease-in-out;
   outline: 5px solid transparent;

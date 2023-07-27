@@ -28,11 +28,11 @@ const Contact = () => {
   //
   return (
     <section className="contact container section" id="contact">
-      <h2 className="section_title">Entrar em contato</h2>
+      <h2 className="section_title">Contato</h2>
       <div className="contact_container grid">
         <div className="contact_info">
           <p className="contact_details">Me envie um e-mail por aqui 😊.</p>
-        <ContactForm />
+          <ContactForm />
         </div>
         <HeaderSocial />
 

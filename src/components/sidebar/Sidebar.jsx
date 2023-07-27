@@ -1,7 +1,6 @@
 import React from "react";
 import "./sidebar.css";
-import Logo from "../../assets/logo.svg";
-
+import DarkMode from "./../darkmode/DarkMode";
 const Sidebar = () => {
   return (
     <aside className="aside">
@@ -10,7 +9,7 @@ const Sidebar = () => {
         target="blank"
         className="nav_logo"
       >
-        <img src={Logo} alt="logo" />
+        <DarkMode />
       </a>
       <nav className="nav">
         <div className="nav_menu">

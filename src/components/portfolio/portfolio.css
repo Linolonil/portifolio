@@ -7,6 +7,7 @@
 
 .work_item {
   cursor: pointer;
+  color: var(--text-color);
   font-weight: var(--font-bold);
   transition: 0.3s;
 }
@@ -34,14 +35,14 @@
   top: 0;
   height: 100%;
   width: 100%;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0;
 }
-.work_card:hover .work_mask{
+.work_card:hover .work_mask {
   opacity: 0.9;
 }
 
-.work_category{
+.work_category {
   color: #fff;
   background-color: var(--first-color);
   border-bottom-left-radius: 0.98rem;
@@ -53,10 +54,10 @@
   display: inline-block;
   padding: 0.19rem 0.625rem;
   transform: translateY(-40px);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.work_title{
+.work_title {
   color: #fff;
   font-size: var(--h3-font-size);
   margin: 0 0 0 0.98rem;
@@ -64,11 +65,11 @@
   position: absolute;
   top: 3.75rem;
   transform: translateY(30px);
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0;
 }
 
-.work_button{
+.work_button {
   color: #fff;
   position: absolute;
   bottom: 1.5rem;
@@ -81,16 +82,16 @@
   border-radius: 50%;
   text-align: center;
   line-height: 43px;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0;
 }
 
-.work_card:hover .work_button{
+.work_card:hover .work_button {
   opacity: 1;
 }
 
 .work_card:hover .work_category,
-.work_card:hover .work_title{
+.work_card:hover .work_title {
   opacity: 1;
   transform: translateY(0);
 }
