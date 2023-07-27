@@ -8,6 +8,7 @@
   --first-color: hsl(352.96, 100%, 64.9%);
   --title-color: hsl(244, 24%, 36%);
   --text-color: hsl(244, 16%, 43%);
+  --text-color-form: hsl(0, 0%, 99%);
   --body-color: hsl(258, 62%, 97%);
   --container-color: hsl(258, 92%, 95%);
   --aside-border: hsl(258, 92%, 95%);
@@ -36,6 +37,7 @@
   --first-color: hsl(353, 100%, 65%);
   --title-color: hsl(0, 5%, 100%);
   --text-color: hsl(0, 5%, 100%);
+  --text-color-form: hsl(0, 0%, 99%);
   --body-color: hsl(258, 8%, 12%);
   --container-color: hsl(258, 8%, 15%);
   --aside-border: hsl(353, 100%, 65%);
@@ -84,7 +86,7 @@ p{
 body {
   background-color: var(--body-color);
   line-height: 1.7;
-  color: var(--text-color);
+  color: var(--text-color-form);
 }
 
 h1,

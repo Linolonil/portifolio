@@ -22,6 +22,10 @@
   column-gap: 1.5rem;
 }
 
+.contact_details {
+  color: var(--text-color);
+}
+
 .contact_form-div {
   position: relative;
   margin-bottom: 1.875rem;
@@ -29,19 +33,20 @@
 }
 
 .contact_form-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
   height: 100%;
+  width: 20rem;
   box-shadow: var(--shadow);
   background-color: var(--first-color);
-  color: var(--text-color);
+  color: var(--text-color-form);
   border: none;
   outline: none;
   border-radius: var(--border-radius);
   padding: 0.635rem 1.875rem;
   z-index: 1;
+}
+.contact_form-input::placeholder {
+  color: var(--text-color-form);
 }
 
 .contact_form-area {
@@ -117,4 +122,10 @@
 }
 .home_social-link:hover {
   color: hsl(43, 100%, 68%);
+}
+
+.home_socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

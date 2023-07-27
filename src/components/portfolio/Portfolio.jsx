@@ -17,6 +17,7 @@ const Portifolio = () => {
       setItems(updatedItems);
     }
   };
+
   return (
     <section className="work container section portifolio" id="portfolio">
       <h2 className="section_title">Meus Projetos</h2>
@@ -39,7 +40,7 @@ const Portifolio = () => {
       </div>
       <div className="work_container grid">
         {items.map((elem) => {
-          const { id, image, title, category, link } = elem;
+          const { id, image, category, title, link } = elem;
           return (
             <div className="work_card" key={id}>
               <div className="work_thumbnail">
